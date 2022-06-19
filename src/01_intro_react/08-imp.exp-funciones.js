@@ -9,18 +9,17 @@ const getHeroebyId = (id) => {
 }
 });
 } */
-import { heroes, owners } from './src/data';
+/* Importación de la matriz de héroes del archivo heroes.js. */
+import { heroes } from './src/data/heroes.js';
 
-console.log(owners);
+//console.log(owners);
 
+export const getHeroeById = (id) => heroes.find((heroe) => heroe.id === id);
 
-const getHeroebyId = (id) => heroes.find((heroe) => heroe.id === id);
+//console.log(getHeroeById(2));
 
+export const getHeroeByOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroebyId(2));
-
-const getHeroebyOwner = (owner) => heroes.filter((heroe) => heroe.owner === owner);
-
-console.log(getHeroebyOwner('Marvel'));
+//console.log(getHeroeByOwner('Marvel'));
 
 
