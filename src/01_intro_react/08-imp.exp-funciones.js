@@ -10,7 +10,7 @@ const getHeroebyId = (id) => {
 });
 } */
 /* Importación de la matriz de héroes del archivo heroes.js. */
-import { heroes } from './src/data/heroes.js';
+import { heroes } from './src/01_intro_react/data/heroes.js';
 
 //console.log(owners);
 
